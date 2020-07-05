@@ -1,0 +1,13 @@
+extends layouts/main
+include mixins/memberBlock
+
+block content   
+    p hello!
+
+    each item in members
+       +memberBlock({
+            name : item.name,
+            school : item.school,
+            age : item.age,
+            sex : item.sex
+        })

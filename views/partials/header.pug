@@ -1,0 +1,15 @@
+header.header
+    .header__column
+        a(href="/") 
+            i.fab.fa-youtube
+    .header__column
+        form(action="/search", method = "get")
+            input(type="text", name="term", placeholder = "Searching By term")
+    .header__column
+        li
+            a(href="/join") join
+
+        li
+            a(href="/login") login
+        li
+            a(href="/logout") logout
